@@ -45,7 +45,7 @@ RSpec.describe "doubles" do
   it "creates a double for a specific case" do
     fake_diary = double :diary, add: nil
     # Set up this double to pass the tests below
-    allow(fake_diary).to receive(:count_entries). and_return 2
+    allow(fake_diary).to receive(:count_entries).and_return 2
 
     # Don't edit below
     fake_diary.add(double :diary_entry)

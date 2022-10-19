@@ -25,5 +25,4 @@ class Diary
     end
     readable.max_by(&:count_words)
   end
-  
 end

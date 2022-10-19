@@ -16,7 +16,8 @@ class TodoList
   end
 
   def complete
-    # Returns all complete todos  
+    # Returns all complete todos 
+    fail "No tasks in list" if @tasks.empty?
     @tasks.select do |task|
       task.done? == true
     end

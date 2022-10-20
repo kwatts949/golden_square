@@ -36,7 +36,7 @@ RSpec.describe "doubles" do
     # Write an expectation below that the method "speak" is called with
     # the argument "Steve"
 
-    expect(fake_object).to receive(:speak).with("Steve").and_return("Steve")
+    expect(fake_object).to receive(:speak).with("Steve")
 
     # Don't edit below
     fake_object.speak("Steve")
